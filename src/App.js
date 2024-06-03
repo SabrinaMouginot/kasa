@@ -28,26 +28,17 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import NotFound from './components/NotFound';
+import Header from './components/Header';
 
 function App() {
   return (
     <BrowserRouter> {/* Wrapper les routes avec BrowserRouter */}
       <div className="App">
-      <header>
-        <ul>
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <li>
-            <Link to="/about">À propos</Link>
-          </li>
-        </ul>
-      </header>
-
+        <Header/>
         <Routes> {/* Utilisez le composant Routes pour définir vos routes */}
           <Route path="/" element={<Home />} /> {/* Définissez la route pour la page d'accueil */}
           <Route path="/about" element={<About />} /> {/* Définissez la route pour la page À propos */}
