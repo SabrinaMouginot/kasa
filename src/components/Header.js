@@ -4,13 +4,13 @@ import '../css/Header.css';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <nav>
-        <ul>
-          <li>
+        <ul className="nav-list">
+          <li className="nav-item">
             <Link to="/">Accueil</Link>
           </li>
-          <li>
+          <li className="nav-item">
             <Link to="/about">À propos</Link>
           </li>
         </ul>

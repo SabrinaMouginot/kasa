@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 20px; /* Adjust the padding as needed */
+  }
+  
+  .nav-list {
+    list-style-type: none; /* Remove list bullets */
+    display: flex; /* Align items horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-item {
+    margin-left: 57px; /* Add space between items */
+    
+    &:first-child {
+      margin-left: 0; /* No margin for the first item */
+    }
+  
+    a {
+      text-decoration: none; /* Remove link underline */
+      color: #000; /* Set link color, adjust as needed */
+    }
+  
+    a:hover {
+      color: #007BFF; /* Change color on hover, adjust as needed */
+    }
+  }
+  
