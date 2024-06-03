@@ -32,17 +32,19 @@ import Home from './components/Home';
 import About from './components/About';
 import NotFound from './components/NotFound';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <BrowserRouter> {/* Wrapper les routes avec BrowserRouter */}
       <div className="App">
-        <Header/>
+        <Header />
         <Routes> {/* Utilisez le composant Routes pour définir vos routes */}
           <Route path="/" element={<Home />} /> {/* Définissez la route pour la page d'accueil */}
           <Route path="/about" element={<About />} /> {/* Définissez la route pour la page À propos */}
           <Route path="*" element={<NotFound />} /> {/* Définissez la route pour toute autre URL non trouvée */}
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
