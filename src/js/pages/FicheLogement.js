@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import '../../css/FicheLogement.css';
+import Carousel from '../components/Carousel';
 
 function FicheLogement() {
   const { id } = useParams();
@@ -13,11 +14,12 @@ function FicheLogement() {
 
   return (
     <div className="fiche-logement">
-      <div className="carousel">
+        <Carousel images={logement.pictures} />
+      {/* <div className="carousel">
         {logement.pictures.map((picture, index) => (
-          <img key={index} src={picture} alt={`Slide ${index}`} />
-        ))}
-      </div>
+          <img key={index} src={picture} alt={`Slide ${index}`} /> */}
+        {/* ))} */}
+      {/* </div> */}
       <h1>{logement.title}</h1>
       <p>{logement.description}</p>
       {/* Ajoutez d'autres détails du logement ici */}
