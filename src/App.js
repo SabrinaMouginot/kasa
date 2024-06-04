@@ -28,11 +28,11 @@
 import React from 'react';
 import './css/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import NotFound from './components/NotFound';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Home from './js/pages/Home';
+import About from './js/pages/About';
+import NotFound from './js/pages/NotFound';
+import Header from './js/components/Header';
+import Footer from './js/components/Footer';
 
 function App() {
   return (
