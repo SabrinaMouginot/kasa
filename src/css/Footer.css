@@ -1,10 +1,15 @@
 .footer {
   background-color: #000000;
-  padding: 20px;
-  text-align: center;
-  position: absolute;
   width: 100%;
-  bottom: 0; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 66px 0 10px 0; }
+  .footer .footer-logo {
+    width: 122px;
+    height: 39.44px;
+    margin-bottom: 10px; }
   .footer p {
     margin: 0;
     color: #ffffff; }
