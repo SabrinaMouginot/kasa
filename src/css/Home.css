@@ -1,5 +1,10 @@
 .home {
   padding: 20px; }
+  .home .logements-box {
+    background-color: #f6f6f6;
+    /* Couleur de fond de la box */
+    padding: 30px;
+    /* Espacement autour de la box */ }
   .home .logements-list {
     display: flex;
     flex-wrap: wrap;
