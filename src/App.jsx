@@ -17,11 +17,12 @@ function App() {
       <Header />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} /> <Card />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Card />
       </div>
       <Footer />
     </BrowserRouter>

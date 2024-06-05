@@ -20,7 +20,6 @@ return (
             </div>
           ))}
         </div> */}
-        {/* <Card /> */}
       </div>
     </div>
   );
