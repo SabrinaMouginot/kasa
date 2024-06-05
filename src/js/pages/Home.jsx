@@ -3,16 +3,6 @@ import { Link } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import '../../css/Home.css';
 
-// const Home = () => {
-//   return (
-//     <div>
-//       <h1>Welcome to Kasa</h1>
-//       <p>This is the Home page.</p>
-//     </div>
-//   );
-// };
-
-
 function Home() {
   // const displayedLogements = logements.slice(0, 6); // Limite l'affichage à 6 cartes
 
