@@ -1,31 +1,25 @@
 .header {
   display: flex;
-  justify-content: flex-end;
-  /* Align items to the right */
-  padding: 20px;
-  /* Adjust the padding as needed */ }
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; }
+
+.header-logo {
+  height: 50px;
+  width: auto; }
 
 .nav-list {
   list-style-type: none;
-  /* Remove list bullets */
   display: flex;
-  /* Align items horizontally */
   margin: 0;
-  /* Remove default margin */
-  padding: 0;
-  /* Remove default padding */ }
+  padding: 0; }
 
 .nav-item {
-  margin-left: 57px;
-  /* Add space between items */ }
+  margin-left: 57px; }
   .nav-item:first-child {
-    margin-left: 0;
-    /* No margin for the first item */ }
+    margin-left: 0; }
   .nav-item a {
     text-decoration: none;
-    /* Remove link underline */
-    color: #000;
-    /* Set link color, adjust as needed */ }
+    color: #000; }
   .nav-item a:hover {
-    color: #007BFF;
-    /* Change color on hover, adjust as needed */ }
+    color: #007BFF; }
