@@ -1,0 +1,20 @@
+  
+    .carousel {
+        display: flex;
+        margin: 30px;
+      
+        img {
+          width: 100%;
+          height: auto;
+          display: block; /* Assure que l'image prend tout l'espace du conteneur */
+        }
+      
+        .arrow-back {
+          left: 10px;
+        }
+      
+        .arrow-forward {
+          right: 10px;
+        }
+      }
+      

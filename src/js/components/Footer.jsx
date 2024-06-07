@@ -4,7 +4,7 @@ import '../../css/Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <img src={`/LOGO.png`} alt="Kasa Logo" className="footer-logo" />
+      <img src={`/assets/LOGO.png`} alt="Kasa Logo" className="footer-logo" />
       <p>© 2020 Kasa. All right reserved</p>
     </footer>
   );

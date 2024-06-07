@@ -10,19 +10,13 @@ function FicheLogement() {
 
   if (!logement) {
     return <div>Logement non trouvé</div>;
+    // retourner  la page Not found 404
   }
 
   return (
     <div className="fiche-logement">
-        <Carousel images={logement.pictures} />
-      {/* <div className="carousel">
-        {logement.pictures.map((picture, index) => (
-          <img key={index} src={picture} alt={`Slide ${index}`} /> */}
-        {/* ))} */}
-      {/* </div> */}
+      <Carousel images={logement.pictures} />
       <h1>{logement.title}</h1>
-      <p>{logement.description}</p>
-      {/* Ajoutez d'autres détails du logement ici */}
     </div>
   );
 }
