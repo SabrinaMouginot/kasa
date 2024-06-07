@@ -1,0 +1,19 @@
+.banner-box {
+    background-image: url('/Home.png');
+    background-size: cover;
+    background-position: center;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    // mix-blend-mode:darken;
+    // background-color: rgba(0, 0, 0, 0.6); 
+
+    h1 {
+        color: white;
+        font-size: 2.5em;
+        margin: 0;
+    }
+}

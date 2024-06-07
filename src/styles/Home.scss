@@ -1,34 +1,11 @@
 .home {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  // flex-direction: column;
 
   .logements-box {
-    background-color: rgb(246, 246, 246); /* Couleur de fond de la box */
-    padding: 30px; /* Espacement autour de la box */
-  }
-
-  .logements-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .logement-card {
-    flex: 1 1 calc(33.333% - 20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: translateY(-5px);
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    h2 {
-      text-align: center;
-      padding: 10px;
-    }
+    background-color: rgb(246, 246, 246);
+    padding: 30px;
   }
 }

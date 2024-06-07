@@ -1,25 +1,20 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import logements from '../../data/logements.json';
 import '../../css/Home.css';
+import Card from '../components/Card';
+import Banner from '../components/Banner';
 
 function Home() {
-  // const displayedLogements = logements.slice(0, 6); // Limite l'affichage à 6 cartes
 
-return (
+  return (
     <div className="home">
-      <h1>Chez vous, partout et ailleurs</h1> {/* Titre en dehors de la boîte grise */}
-      <div className="logements-box"> {/* Boîte grise contenant les cartes */}
-        {/* <div className="logements-list">
-          {logements.map(logement => (
-            <div key={logement.id} className="logement-card">
-              <Link to={`/logement/${logement.id}`}>
-                <img src={logement.cover} alt={logement.title} />
-                <h2>{logement.title}</h2>
-              </Link>
-            </div>
-          ))}
-        </div> */}
+      <div className="content-wrapper">
+        <div className='banner-box'>
+          <Banner />
+        </div>
+
+        <div className="logements-box"> {/* Boîte grise contenant les cartes */}
+          <Card />
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './js/components/Header';
 import Footer from './js/components/Footer';
-import Card from './js/components/Card';
 import Home from './js/pages/Home';
 import About from './js/pages/About';
 import NotFound from './js/pages/NotFound';
@@ -22,7 +21,6 @@ function App() {
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Card />
       </div>
       <Footer />
     </BrowserRouter>
@@ -30,4 +28,3 @@ function App() {
 }
 
 export default App;
-
