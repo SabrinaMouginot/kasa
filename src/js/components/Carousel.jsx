@@ -18,7 +18,7 @@ function Carousel({ images }) {
         <img src={`/assets/arrow_back.png`} alt="flèche précédente" className="arrow-back" />
       </button>
 
-      <img src={images[currentIndex]} alt="Logement" />
+      <img src={images[currentIndex]} alt="Logement"/>
       
       <button onClick={handleNext}>
         <img src={`/assets/arrow_forward.png`} alt="flèche suivante" className="arrow-forward" />

@@ -1,20 +1,53 @@
   
+    // .carousel {
+    //     display: flex;
+    //     margin: 30px;
+      
+    //     img {
+    //       width: 100%;
+    //       height: auto;
+    //       display: block; /* Assure que l'image prend tout l'espace du conteneur */
+    //     }
+      
+    //     .arrow-back {
+    //       left: 10px;
+    //     }
+      
+    //     .arrow-forward {
+    //       right: 10px;
+    //     }
+    //   }
+      
     .carousel {
+        position: relative;
         display: flex;
+        align-items: center; /* Aligne les éléments verticalement au centre */
+        // overflow: hidden; /* Empêche le débordement du contenu */
         margin: 30px;
+        width: 100%;
+      }
       
-        img {
-          width: 100%;
-          height: auto;
-          display: block; /* Assure que l'image prend tout l'espace du conteneur */
-        }
+      .image-container {
+        flex-grow: 1; /* L'image prendra autant d'espace que possible */
+        margin: 0 10px; /* Marge pour séparer l'image des flèches */
+      }
       
-        .arrow-back {
-          left: 10px;
-        }
+      .arrow-back,
+      .arrow-forward {
+        background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent gris foncé */
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute; /* Position absolue par rapport au carousel */
+        top: 50%; /* Alignement vertical au centre */
+        transform: translateY(-50%); /* Ajuste verticalement la position */
+      }
       
-        .arrow-forward {
-          right: 10px;
-        }
+      .arrow-back {
+        left: 0; /* Flèche précédente à gauche */
+      }
+      
+      .arrow-forward {
+        right: 0; /* Flèche suivante à droite */
       }
       
