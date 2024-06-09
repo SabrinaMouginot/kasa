@@ -3,14 +3,15 @@ import { useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import '../../css/FicheLogement.css';
 import Carousel from '../components/Carousel';
+import NotFound from './NotFound'; 
 
 function FicheLogement() {
   const { id } = useParams();
   const logement = logements.find(logement => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
     // retourner  la page Not found 404
+    return <NotFound />;
   }
 
   return (
