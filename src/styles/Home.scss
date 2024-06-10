@@ -7,4 +7,33 @@
     background-color: rgb(246, 246, 246);
     padding: 30px;
   }
+
+  // .banner {
+  //   background-image: url('/assets/Home.png');
+  //   background-size: cover;
+  //   background-position: center;
+  //   height: 223px;
+  //   border-radius: 25px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-bottom: 30px;
+  //   position: relative; /* Ajout pour positionner le titre à l'intérieur */
+
+  .banner-title {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+    position: absolute;
+    /* Permet de positionner le titre par rapport à .banner */
+    top: 50%;
+    /* Centrer verticalement */
+    left: 50%;
+    /* Centrer horizontalement */
+    transform: translate(-50%, -50%);
+    /* Ajustement pour un centrage parfait */
+  }
+
+  // }
+
 }

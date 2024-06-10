@@ -10,6 +10,7 @@ function Home() {
       <div className="content-wrapper">
         <div className='banner-box'>
           <Banner />
+          <h1 className="banner-title">Chez vous, partout et ailleurs</h1>
         </div>
 
         <div className="logements-box"> {/* Boîte grise contenant les cartes */}
