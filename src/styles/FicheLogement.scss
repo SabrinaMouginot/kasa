@@ -1,13 +1,19 @@
 .fiche-logement {
-    padding: 30px;
+  padding: 30px;
 
-    h1 {
-      font-size: 2em;
-      margin-top: 20px;
-    }
-  
-    p {
-      margin-top: 10px;
-    }
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
   }
-  
+
+  p {
+    margin-top: 10px;
+  }
+
+  .tags-list {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
