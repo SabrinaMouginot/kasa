@@ -1,24 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logements from '../../data/logements.json';
 import '../../css/Card.css';
 
-function Card() {
+function Card({id,cover,title}) {
     return (
-        <article className="logements-list">
-            {logements.map(logement => (
-                <div key={logement.id} className="logement-card">
-                    <Link to={`/logement/${logement.id}`}>
-                        {/* <img src={logement.cover} alt={logement.title} />
-                        <h2>{logement.title}</h2> */}
-                        <div className="image-container">
-                            <img src={logement.cover} alt={logement.title} />
-                            <h2>{logement.title}</h2>
-                        </div>
-                    </Link>
+
+        <div className="logement-card">
+            <Link to={`/logement/${id}`}>
+                {/* <img src={cover} alt={title} />
+                        <h2>{title}</h2> */}
+                <div className="image-container">
+                    <img src={cover} alt={title} />
+                    <h2>{title}</h2>
                 </div>
-            ))}
-        </article>
+            </Link>
+        </div>
+
     )
 }
 
