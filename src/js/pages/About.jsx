@@ -1,11 +1,15 @@
 import React from 'react';
-import '../../css/About.css'; 
+import '../../css/About.css';
+import Banner from '../components/Banner';
+// import Dropdown from '../components/Dropdown'
 
 const About = () => {
   return (
     <div>
-      <h1>About Kasa</h1>
-      <p>This is the About page.</p>
+      <div className='banner-box'>
+        <Banner />
+      </div>
+      {/* <Dropdown /> */}
     </div>
   );
 };
