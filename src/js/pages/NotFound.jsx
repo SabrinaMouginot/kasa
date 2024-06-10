@@ -3,10 +3,10 @@ import '../../css/NotFound.css';
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>404</h1>
+    <div className='notfound-msg'>
+      <h1 className='notfound-title'>404</h1>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <a href="./Home.jsx">Retourner vers la page d'accueil</a>
+      <a href="../../../..">Retourner vers la page d'accueil</a>
     </div>
   );
 };
