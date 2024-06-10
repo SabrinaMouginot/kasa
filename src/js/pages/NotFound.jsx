@@ -6,7 +6,7 @@ const NotFound = () => {
     <div>
       <h1>404</h1>
       <p>Oups! La page que vous demandez n'existe pas.</p>
-      <a href="./Home.jsx">Retourner vers alpage d'accueil</a>
+      <a href="./Home.jsx">Retourner vers la page d'accueil</a>
     </div>
   );
 };
