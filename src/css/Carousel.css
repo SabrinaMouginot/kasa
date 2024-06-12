@@ -1,6 +1,5 @@
 .carousel {
-  display: flex;
-  margin: 30px; }
+  display: flex; }
   .carousel img {
     width: 100%;
     height: auto;
