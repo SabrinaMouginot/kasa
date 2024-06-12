@@ -1,5 +1,5 @@
 .fiche-logement {
-  padding: 50px; }
+  padding: 0px 50px 50px 50px; }
   .fiche-logement h1 {
     font-size: 2em;
     margin-top: 20px;
@@ -20,3 +20,15 @@
   .fiche-logement .dropdown {
     flex: 1;
     margin-bottom: 20px; }
+  .fiche-logement .rating-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; }
+  .fiche-logement .rating {
+    display: flex;
+    align-items: center; }
+    .fiche-logement .rating .star {
+      font-size: 24px;
+      color: lightgray;
+      cursor: pointer; }

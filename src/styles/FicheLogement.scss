@@ -1,5 +1,5 @@
 .fiche-logement {
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
 
   h1 {
     font-size: 2em;
@@ -29,5 +29,23 @@
   .dropdown {
     flex: 1;
     margin-bottom: 20px;
+  }
+
+  .rating-tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+
+    .star {
+      font-size: 24px;
+      color: lightgray;
+      cursor: pointer;
+    }
   }
 }

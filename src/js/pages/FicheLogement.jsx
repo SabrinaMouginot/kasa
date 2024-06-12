@@ -21,18 +21,33 @@ function FicheLogement() {
       <Carousel images={logement.pictures} />
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
+
       {/* <div>
         {logement.tags.map(tag => (
           <span key={index} className="tag">{tag}</span>
         ))
         }
       </div> */}
-      <div className="tags-list">
-        {/* {logement.tags.map((tag, index) => (
+      <div className="rating-tags">
+        <div className="tags-list">
+          {/* {logement.tags.map((tag, index) => (
           <Tag key={index} tag={tag} /> */}
           {logement.tags.map(tag => (
             <Tag key={`${logement.id}-${tag}`} tag={tag} />
-        ))}
+          ))}
+        </div>
+        <div className="rating">
+          {[...Array(5)].map((_, index) => (
+            <span
+              key={index}
+              className={`star`}
+              onClick={() => setRating(index + 1)}
+            >
+              ★
+            </span>
+          ))}
+        </div>
+
       </div>
       <div className="dropdowns">
         <Dropdown title="Description" content={logement.description} />
