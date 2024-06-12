@@ -1,11 +1,14 @@
 .carousel {
-  display: flex; }
-  .carousel img {
+  display: flex;
+  margin-bottom: 50px; }
+  .carousel .img-lgt {
     width: 100%;
-    height: auto;
-    display: block;
-    /* Assure que l'image prend tout l'espace du conteneur */ }
+    max-width: 1240px;
+    max-height: 415px;
+    display: block; }
   .carousel .arrow-back {
-    left: 10px; }
+    left: 10px;
+    z-index: 10; }
   .carousel .arrow-forward {
-    right: 10px; }
+    right: 10px;
+    z-index: 10; }

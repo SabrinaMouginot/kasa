@@ -1,19 +1,58 @@
-  
-    .carousel {
-        display: flex;
-        // margin: 30px;
-      
-        img {
-          width: 100%;
-          height: auto;
-          display: block; /* Assure que l'image prend tout l'espace du conteneur */
-        }
-      
-        .arrow-back {
-          left: 10px;
-        }
-      
-        .arrow-forward {
-          right: 10px;
-        }
+  .carousel {
+      display: flex;
+      margin-bottom: 50px;
+
+      .img-lgt {
+        width: 100%;
+        max-width: 1240px;
+        max-height: 415px;
+        display: block; 
       }
+
+      .arrow-back {
+        left: 10px;
+        z-index: 10;
+      }
+
+      .arrow-forward {
+        right: 10px;
+        z-index: 10;
+      }
+    }
+
+  // .carousel {
+  //   position: relative;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 100%;
+  //   height: 500px; // Assurez-vous de fixer une hauteur pour le conteneur du carousel
+
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //     z-index: 5;
+  //   }
+
+  //   button {
+  //     // position: absolute;
+  //     // top: 50%;
+  //     // transform: translateY(-50%);
+  //     // background-color: transparent;
+  //     // border: none;
+  //     // cursor: pointer;
+  //     // z-index: 10;
+  //     // padding: 0;
+
+  //     &.arrow-back {
+  //       left: 10px;
+  //       z-index: 10;
+  //     }
+
+  //     &.arrow-forward {
+  //       right: 10px;
+  //       z-index: 10;
+  //     }
+  //   }
+  // }
