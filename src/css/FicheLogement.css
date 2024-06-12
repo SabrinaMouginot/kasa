@@ -4,9 +4,27 @@
     font-size: 2em;
     margin-top: 20px;
     color: #ff6060; }
-  .fiche-logement h1, .fiche-logement h2 {
+  .fiche-logement h1,
+  .fiche-logement h2 {
     margin: 0;
     padding: 0; }
+  .fiche-logement .title-owner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; }
+    .fiche-logement .title-owner .owner-info {
+      display: flex;
+      align-items: center; }
+      .fiche-logement .title-owner .owner-info .owner-name {
+        margin-right: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #ff6060; }
+      .fiche-logement .title-owner .owner-info .owner-picture {
+        width: 4em;
+        height: 4em;
+        border-radius: 50%; }
   .fiche-logement .tags-list {
     margin-top: 10px;
     display: flex;
