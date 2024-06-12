@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import '../../css/FicheLogement.css';
@@ -10,6 +10,7 @@ import Dropdown from '../components/Dropdown';
 function FicheLogement() {
   const { id } = useParams();
   const logement = logements.find(logement => logement.id === id);
+  const [rating, setRating] = useState(0); 
 
   if (!logement) {
     // retourner  la page Not found 404
@@ -35,18 +36,18 @@ function FicheLogement() {
           {logement.tags.map(tag => (
             <Tag key={`${logement.id}-${tag}`} tag={tag} />
           ))}
-        </div>
-        <div className="rating">
-          {[...Array(5)].map((_, index) => (
-            <span
-              key={index}
-              className={`star`}
-              onClick={() => setRating(index + 1)}
-            >
-              ★
-            </span>
-          ))}
-        </div>
+                    </div>
+          <div className="rating">
+            {[...Array(5)].map((_, index) => (
+              <span
+                key={index}
+                className={`star ${index < rating ? 'filled' : ''}`}
+                onClick={() => setRating(index + 1)}
+              >
+                ★
+              </span>
+            ))}
+          </div>
 
       </div>
       <div className="dropdowns">

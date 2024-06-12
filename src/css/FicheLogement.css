@@ -32,3 +32,5 @@
       font-size: 24px;
       color: lightgray;
       cursor: pointer; }
+    .fiche-logement .rating .star.filled {
+      color: #ff6060; }
