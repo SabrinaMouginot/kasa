@@ -1,10 +1,8 @@
 .fiche-logement {
-  padding: 30px; }
+  padding: 50px; }
   .fiche-logement h1 {
     font-size: 2em;
     margin-top: 20px; }
-  .fiche-logement p {
-    margin-top: 10px; }
   .fiche-logement .tags-list {
     margin-top: 10px;
     display: flex;

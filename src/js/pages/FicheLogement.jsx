@@ -19,6 +19,7 @@ function FicheLogement() {
     <div className="fiche-logement">
       <Carousel images={logement.pictures} />
       <h1>{logement.title}</h1>
+      <h2>{logement.location}</h2>
       {/* <div>
         {logement.tags.map(tag => (
           <span key={index} className="tag">{tag}</span>
