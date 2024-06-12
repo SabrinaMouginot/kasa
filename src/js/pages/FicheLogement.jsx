@@ -5,6 +5,7 @@ import '../../css/FicheLogement.css';
 import Carousel from '../components/Carousel';
 import NotFound from './NotFound';
 import Tag from '../components/Tag';
+import Dropdown from '../components/Dropdown';
 
 function FicheLogement() {
   const { id } = useParams();
@@ -32,6 +33,10 @@ function FicheLogement() {
           {logement.tags.map(tag => (
             <Tag key={`${logement.id}-${tag}`} tag={tag} />
         ))}
+      </div>
+      <div className="dropdowns">
+        <Dropdown title="Description" content={logement.description} />
+        <Dropdown title="Equipements" content={logement.equipments.join(', ')} />
       </div>
     </div>
   );

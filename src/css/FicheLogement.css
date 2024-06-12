@@ -2,9 +2,21 @@
   padding: 50px; }
   .fiche-logement h1 {
     font-size: 2em;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #ff6060; }
+  .fiche-logement h1, .fiche-logement h2 {
+    margin: 0;
+    padding: 0; }
   .fiche-logement .tags-list {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px; }
+  .fiche-logement .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 25px; }
+  .fiche-logement .dropdown {
+    flex: 1;
+    margin-bottom: 20px; }
