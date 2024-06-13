@@ -19,6 +19,7 @@ function FicheLogement() {
 
   return (
     <div className="fiche-logement">
+      <Carousel images={logement.pictures} />
       <div className="title-owner">
         <h1>{logement.title}</h1>
         <div className="owner-info">
