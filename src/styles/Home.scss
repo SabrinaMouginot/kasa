@@ -21,21 +21,27 @@
       transform: translate(-50%, -50%);
     }
   }
-  
-  @media (max-width: 426px) {
-    // .home {
-    //   padding: 20px;
-    // }
+}
+
+@media (max-width: 426px) {
+  .home {
+    padding: 20px;
 
     .logements-box {
       background-color: white;
       margin: 0;
       padding: 0;
     }
-    
+
     .logements-list {
       flex-direction: column; // Alignez les cartes en colonne
       align-items: center; // Centre les cartes horizontalement
+    }
+
+    .banner-box {
+      .banner-title {
+        size: 24px;
+      }
     }
   }
 }

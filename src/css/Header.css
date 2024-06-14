@@ -23,3 +23,7 @@
     color: #000; }
   .nav-item a:hover {
     color: #007BFF; }
+
+@media (max-width: 426px) {
+  .h1 {
+    size: 24px; } }

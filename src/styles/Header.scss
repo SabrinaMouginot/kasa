@@ -3,42 +3,42 @@
 //     justify-content: flex-end; 
 //     padding: 20px; 
 //   }
-  
+
 //   .nav-list {
 //     list-style-type: none; 
 //     display: flex;
 //     margin: 0; 
 //     padding: 0; 
 //   }
-  
+
 //   .nav-item {
 //     margin-left: 57px; 
-    
+
 //     &:first-child {
 //       margin-left: 0; 
 //     }
-  
+
 //     a {
 //       text-decoration: none;
 //       color: #000;
 //     }
-  
+
 //     a:hover {
 //       color: #007BFF; 
 //     }
 //   }
-  
+
 
 .header {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 50px;
 }
 
 .header-logo {
-  height: 50px; 
-  width: auto; 
+  height: 50px;
+  width: auto;
 }
 
 .nav-list {
@@ -63,4 +63,14 @@
   a:hover {
     color: #007BFF;
   }
+
 }
+
+
+@media (max-width: 426px) {
+
+  .h1 {
+    size: 24px;
+  }
+  
+    }
