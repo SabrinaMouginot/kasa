@@ -12,3 +12,10 @@
     margin-bottom: 10px; }
   .footer p {
     color: #ffffff; }
+
+@media (max-width: 426px) {
+  .footer {
+    height: 200px;
+    padding: 0; }
+    .footer .footer-text {
+      display: block; } }

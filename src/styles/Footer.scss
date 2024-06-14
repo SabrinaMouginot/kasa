@@ -2,11 +2,11 @@
   background-color: #000000;
   width: 100%;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  padding: 66px 0 10px 0; 
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 66px 0 10px 0;
+
   .footer-logo {
     width: 122px;
     height: 39.44px;
@@ -15,5 +15,17 @@
 
   p {
     color: #ffffff;
+  }
+}
+
+@media (max-width: 426px) {
+  .footer {
+    height: 200px;
+    padding: 0;
+
+    .footer-text {
+      display: block;
+    }
+  
   }
 }
