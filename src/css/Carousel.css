@@ -15,4 +15,6 @@
 
 @media (max-width: 426px) {
   .carousel {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+    .carousel .img-lgt {
+      width: 100%; } }

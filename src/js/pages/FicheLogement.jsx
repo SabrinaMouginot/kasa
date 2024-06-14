@@ -22,7 +22,7 @@ function FicheLogement() {
       <Carousel images={logement.pictures} />
       <div className="title-owner">
         <h1>{logement.title}</h1>
-        <div className="owner-info">
+        <div className="owner-info desktop">
           <span className="owner-name">{logement.host.name}</span>
           <img src={logement.host.picture} alt={logement.host.name} className="owner-picture" />
         </div>
@@ -44,25 +44,25 @@ function FicheLogement() {
             <Tag key={`${logement.id}-${tag}`} tag={tag} />
           ))}
         </div>
-        <div className="rating">
-          {[...Array(5)].map((_, index) => (
-            <span
-              key={index}
-              className={`star ${index < rating ? 'filled' : ''}`}
-              onClick={() => setRating(index + 1)}
-            >
-              ★
-            </span>
-          ))}
-        </div>
 
-        {/* <div className="title-owner-mobile">
-          <div className="owner-info-mobile">
-            <span className="owner-name">{logement.host.name}</span>
-            <img src={logement.host.picture} alt={logement.host.name} className="owner-picture" />
+        <div className="title-owner">
+          <div className="rating">
+            {[...Array(5)].map((_, index) => (
+              <span
+                key={index}
+                className={`star ${index < rating ? 'filled' : ''}`}
+                onClick={() => setRating(index + 1)}
+              >
+                ★
+              </span>
+            ))}
+
+            <div className="owner-info mobile">
+              <span className="owner-name">{logement.host.name}</span>
+              <img src={logement.host.picture} alt={logement.host.name} className="owner-picture" />
+            </div>
           </div>
-        </div> */}
-
+        </div>
       </div>
       <div className="dropdowns">
         <Dropdown title="Description" content={logement.description} />

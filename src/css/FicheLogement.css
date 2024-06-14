@@ -25,6 +25,8 @@
         width: 4em;
         height: 4em;
         border-radius: 50%; }
+    .fiche-logement .title-owner .mobile {
+      display: none; }
   .fiche-logement .tags-list {
     margin-top: 10px;
     display: flex;
@@ -57,6 +59,24 @@
   .fiche-logement {
     padding: 0px 20px 20px 20px; }
     .fiche-logement .dropdowns,
-    .fiche-logement .rating-tags,
+    .fiche-logement .rating-tags {
+      display: block; }
     .fiche-logement .title-owner {
-      display: block; } }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px; }
+      .fiche-logement .title-owner .desktop {
+        display: none; }
+      .fiche-logement .title-owner .mobile {
+        display: flex;
+        align-items: center; }
+        .fiche-logement .title-owner .mobile .owner-name {
+          margin-right: 10px;
+          font-size: 1.2em;
+          font-weight: bold;
+          color: #ff6060; }
+        .fiche-logement .title-owner .mobile .owner-picture {
+          width: 4em;
+          height: 4em;
+          border-radius: 50%; } }
