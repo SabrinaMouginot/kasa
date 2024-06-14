@@ -39,6 +39,13 @@
     }
   }
 
+  
+  // .title-owner-mobile {
+  //   .owner-info-mobile {
+  //     display: none;
+  //   }
+  // }
+
   .tags-list {
     margin-top: 10px;
     display: flex;
@@ -78,5 +85,23 @@
     .star.filled {
       color: rgb(255, 96, 96);
     }
+  }
+}
+
+@media (max-width: 426px) {
+  .fiche-logement {
+    padding: 0px 20px 20px 20px;
+
+    .dropdowns,
+    .rating-tags,
+    .title-owner {
+      display: block;
+    }
+
+    // .title-owner {
+    //   .owner-info {
+    //     display: none;
+    //   }
+    // }
   }
 }

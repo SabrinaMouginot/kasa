@@ -12,3 +12,7 @@
   .carousel .arrow-forward {
     right: 10px;
     z-index: 10; }
+
+@media (max-width: 426px) {
+  .carousel {
+    margin-bottom: 20px; } }

@@ -10,7 +10,7 @@ import Dropdown from '../components/Dropdown';
 function FicheLogement() {
   const { id } = useParams();
   const logement = logements.find(logement => logement.id === id);
-  const [rating, setRating] = useState(0); 
+  const [rating, setRating] = useState(0);
 
   if (!logement) {
     // retourner  la page Not found 404
@@ -43,18 +43,25 @@ function FicheLogement() {
           {logement.tags.map(tag => (
             <Tag key={`${logement.id}-${tag}`} tag={tag} />
           ))}
-                    </div>
-          <div className="rating">
-            {[...Array(5)].map((_, index) => (
-              <span
-                key={index}
-                className={`star ${index < rating ? 'filled' : ''}`}
-                onClick={() => setRating(index + 1)}
-              >
-                ★
-              </span>
-            ))}
+        </div>
+        <div className="rating">
+          {[...Array(5)].map((_, index) => (
+            <span
+              key={index}
+              className={`star ${index < rating ? 'filled' : ''}`}
+              onClick={() => setRating(index + 1)}
+            >
+              ★
+            </span>
+          ))}
+        </div>
+
+        {/* <div className="title-owner-mobile">
+          <div className="owner-info-mobile">
+            <span className="owner-name">{logement.host.name}</span>
+            <img src={logement.host.picture} alt={logement.host.name} className="owner-picture" />
           </div>
+        </div> */}
 
       </div>
       <div className="dropdowns">

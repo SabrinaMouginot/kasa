@@ -52,3 +52,11 @@
       cursor: pointer; }
     .fiche-logement .rating .star.filled {
       color: #ff6060; }
+
+@media (max-width: 426px) {
+  .fiche-logement {
+    padding: 0px 20px 20px 20px; }
+    .fiche-logement .dropdowns,
+    .fiche-logement .rating-tags,
+    .fiche-logement .title-owner {
+      display: block; } }
