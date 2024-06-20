@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import logements from '../../data/logements.json';
 import '../../css/FicheLogement.css';
 import Carousel from '../components/Carousel';
 import NotFound from './NotFound';
@@ -9,11 +8,20 @@ import Dropdown from '../components/Dropdown';
 
 function FicheLogement() {
   const { id } = useParams();
-  const logement = logements.find(logement => logement.id === id);
+  const [logement, setLogement] = useState(null);
   const [rating, setRating] = useState(0);
 
+  useEffect(() => {
+    fetch('/logements.json')
+      .then(response => response.json())
+      .then(data => {
+        const foundLogement = data.find(logement => logement.id === id);
+        setLogement(foundLogement);
+      })
+      .catch(error => console.error('Error fetching logement:', error));
+  }, [id]);
+
   if (!logement) {
-    // retourner  la page Not found 404
     return <NotFound />;
   }
 
