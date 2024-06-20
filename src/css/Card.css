@@ -8,8 +8,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   border-radius: 25px;
-  width: 340px;
-  height: 340px; }
+  width: 21em;
+  height: 21em; }
   .home .logement-card:hover {
     transform: translateY(-5px); }
   .home .logement-card .image-container {
@@ -37,8 +37,14 @@
     height: 100%;
     width: 100%; }
 
-@media (max-width: 1300px) and (min-width: 499px) {
+@media (max-width: 1000px) and (min-width: 600px) {
   .home .logement-card {
     flex: 1 1 calc(45% - 20px);
-    width: 335px;
-    height: 255px; } }
+    width: 21em;
+    height: 16em; } }
+
+@media (max-width: 350px) {
+  .home .logement-card {
+    flex: 1 1 calc(80% - 20px);
+    width: 15em;
+    height: 21em; } }
