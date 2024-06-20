@@ -36,3 +36,9 @@
     display: block;
     height: 100%;
     width: 100%; }
+
+@media (max-width: 1300px) and (min-width: 499px) {
+  .home .logement-card {
+    flex: 1 1 calc(45% - 20px);
+    width: 335px;
+    height: 255px; } }

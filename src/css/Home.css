@@ -20,7 +20,7 @@
       left: 50%;
       transform: translate(-50%, -50%); }
 
-@media (max-width: 426px) {
+@media (max-width: 600px) {
   .home {
     padding: 20px; }
     .home .logements-box {
