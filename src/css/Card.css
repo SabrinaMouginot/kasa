@@ -1,13 +1,15 @@
 .home .logements-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; }
+  gap: 50px; }
 
 .home .logement-card {
-  flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(30% - 30px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  border-radius: 25px; }
+  border-radius: 25px;
+  width: 340px;
+  height: 340px; }
   .home .logement-card:hover {
     transform: translateY(-5px); }
   .home .logement-card .image-container {

@@ -2,9 +2,13 @@
   padding: 50px;
   display: flex;
   justify-content: center; }
+  .home .content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px; }
   .home .logements-box {
     background-color: #f6f6f6;
-    padding: 30px; }
+    padding: 50px; }
   .home .banner-box {
     background-image: url("/assets/Home.png"); }
     .home .banner-box .banner-title {
