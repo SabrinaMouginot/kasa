@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../css/Home.css';
 import Card from '../components/Card';
 import Banner from '../components/Banner';
-import logements from '../../data/logements.json';
 
 function Home() {
+  const [logements, setLogements] = useState([]);
+
+  useEffect(() => {
+    fetch('/logements.json')
+      .then(response => response.json())
+      .then(data => setLogements(data))
+      .catch(error => console.error('Error fetching logements:', error));
+  }, []);
 
   return (
     <div className="home">
