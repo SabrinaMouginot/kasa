@@ -1,5 +1,11 @@
 .About {
     padding: 50px;
+
+    .content-wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
 }
 
 .banner-box {
@@ -13,6 +19,4 @@
     padding: 20px;
 }
 
-@media (max-width: 426px) {
-
-}
+@media (max-width: 426px) {}

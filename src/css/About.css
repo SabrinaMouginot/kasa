@@ -1,5 +1,8 @@
 .About {
   padding: 50px; }
+  .About .content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto; }
 
 .banner-box {
   background-image: url("/assets/About.png"); }
