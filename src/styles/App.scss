@@ -3,6 +3,14 @@
   pointer-events: none;
 }
 
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}  
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

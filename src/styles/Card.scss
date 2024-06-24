@@ -1,18 +1,10 @@
 .home {
-  .logements-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
 
   .logement-card {
     flex: 1 1 calc(30% - 30px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     border-radius: 25px;
-    // width: 340px;
-    // height: 340px;
-    width: 21em;
     height: 21em;
 
     &:hover {
@@ -58,7 +50,6 @@
   .home {
     .logement-card {
       flex: 1 1 calc(45% - 20px);
-      width: 21em;
       height: 16em;
     }
   }
@@ -68,7 +59,6 @@
   .home {
     .logement-card {
       flex: 1 1 calc(80% - 20px);
-      width: 15em;
       height: 21em;
     }
   }

@@ -9,6 +9,6 @@
   margin-bottom: 30px;
   position: relative; }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .banner-box {
     height: 7em; } }

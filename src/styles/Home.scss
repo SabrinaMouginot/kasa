@@ -3,15 +3,15 @@
   display: flex;
   justify-content: center;
 
-  .content-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px; 
-  }  
-
   .logements-box {
     background-color: rgb(246, 246, 246);
     padding: 50px;
+  }
+
+  .logements-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
   }
 
   .banner-box {
@@ -29,7 +29,16 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width:768.1px) and (max-width:1024px) {
+  .home {
+
+    .logements-list {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
   .home {
     padding: 20px;
 
@@ -42,6 +51,7 @@
     .logements-list {
       flex-direction: column; 
       align-items: center;
+      display: flex;
     }
 
     .banner-box {

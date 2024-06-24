@@ -13,16 +13,18 @@ import './css/index.css';
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+
       <div className="App">
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </div>
-      <Footer />
+
     </BrowserRouter>
   );
 }

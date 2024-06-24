@@ -2,13 +2,13 @@
   padding: 50px;
   display: flex;
   justify-content: center; }
-  .home .content-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px; }
   .home .logements-box {
     background-color: #f6f6f6;
     padding: 50px; }
+  .home .logements-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; }
   .home .banner-box {
     background-image: url("/assets/Home.png"); }
     .home .banner-box .banner-title {
@@ -20,7 +20,11 @@
       left: 50%;
       transform: translate(-50%, -50%); }
 
-@media (max-width: 600px) {
+@media (min-width: 768.1px) and (max-width: 1024px) {
+  .home .logements-list {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 768px) {
   .home {
     padding: 20px; }
     .home .logements-box {
@@ -29,7 +33,8 @@
       padding: 0; }
     .home .logements-list {
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      display: flex; }
     .home .banner-box .banner-title {
       size: 24px;
       top: 0;
