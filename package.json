@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "sass": "node-sass src/styles -o src/css --recursive",
+    "sass": "node-sass src/styles -o src/css --recursive --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
