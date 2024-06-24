@@ -16,7 +16,9 @@ function FicheLogement() {
       .then(response => response.json())
       .then(data => {
         const foundLogement = data.find(logement => logement.id === id);
-        setLogement(foundLogement);
+        if(foundLogement){
+          setLogement(foundLogement);
+        }
       })
       .catch(error => console.error('Error fetching logement:', error));
   }, [id]);
