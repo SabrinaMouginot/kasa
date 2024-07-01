@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .dropdown {
   width: 80%;
   margin: 10px auto;
@@ -19,7 +20,13 @@
   margin: 0; }
 
 .dropdown-arrow {
-  font-size: 1.2em; }
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease; }
+
+.dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+  /* Pour animer la rotation de la flèche */ }
 
 .dropdown-content {
   background-color: white;

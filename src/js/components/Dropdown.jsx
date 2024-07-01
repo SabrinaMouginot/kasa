@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import '../../css/Dropdown.css';
 
@@ -12,7 +13,11 @@ function Dropdown({ title, content }) {
     <div className={`dropdown ${isOpen ? 'open' : ''}`}>
       <div className="dropdown-header" onClick={toggleDropdown}>
         <span className="dropdown-title">{title}</span>
-        <span className="dropdown-arrow">{isOpen ? '▲' : '▼'}</span>
+        <img
+          className={`dropdown-arrow ${isOpen ? 'open' : 'close'}`}
+          src={`${process.env.PUBLIC_URL}/assets/arrow_back_ios-24px 2.svg`}
+          alt="Dropdown Arrow"
+        />
       </div>
       {isOpen && <div className="dropdown-content"><p>{content}</p></div>}
     </div>
