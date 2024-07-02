@@ -25,8 +25,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      // position: relative;
-      z-index: 2; // Assurez-vous que le contenu est devant l'overlay
+      z-index: 2;
     }
 
   }
