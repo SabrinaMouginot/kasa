@@ -12,7 +12,10 @@
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  gap: 30px; }
+  .nav-list .nav-item:hover {
+    text-decoration-line: underline; }
 
 .nav-item a {
   text-decoration: none;
