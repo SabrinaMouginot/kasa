@@ -10,7 +10,7 @@
 
   .logements-list {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
   }
 
@@ -25,7 +25,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      // position: relative;
+      z-index: 2; // Assurez-vous que le contenu est devant l'overlay
     }
+
   }
 }
 
@@ -33,7 +36,7 @@
   .home {
 
     .logements-list {
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -49,7 +52,7 @@
     }
 
     .logements-list {
-      flex-direction: column; 
+      flex-direction: column;
       align-items: center;
       display: flex;
     }
@@ -66,4 +69,3 @@
     }
   }
 }
-
