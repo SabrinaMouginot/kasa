@@ -22,11 +22,13 @@
       border-radius: 10px; }
     .home .logement-card .image-container h2 {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      bottom: 20px;
+      left: 20px;
       margin: 0;
-      padding: 10px;
+      padding: 0;
+      font-size: 18px;
+      width: 50%;
+      word-wrap: break-word;
       color: white;
       text-align: left;
       z-index: 2; }
