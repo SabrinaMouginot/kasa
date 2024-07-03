@@ -1,11 +1,12 @@
 @charset "UTF-8";
 .home {
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
   display: flex;
   justify-content: center; }
   .home .logements-box {
     background-color: #f6f6f6;
-    padding: 50px; }
+    padding: 50px;
+    border-radius: 25px; }
     .home .logements-box .logements-list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -50,7 +51,7 @@
 
 @media (max-width: 768px) {
   .home {
-    padding: 20px; }
+    padding: 0px 20px 20px 20px; }
     .home .logements-box {
       background-color: white;
       margin: 0;
