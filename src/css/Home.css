@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .home {
   padding: 50px;
   display: flex;
@@ -5,12 +6,22 @@
   .home .logements-box {
     background-color: #f6f6f6;
     padding: 50px; }
-  .home .logements-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px; }
+    .home .logements-box .logements-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px; }
+      @media (max-width: 768px) {
+        .home .logements-box .logements-list {
+          grid-template-columns: 1fr;
+          /* Une seule colonne sur mobile */
+          gap: 20px;
+          /* Espacement de 25px entre les cartes */ }
+          .home .logements-box .logements-list .logements-box {
+            background-color: none; } }
   .home .banner-box {
     background-image: url("/assets/Home.png"); }
+    .home .banner-box::after {
+      background: rgba(0, 0, 0, 0.6); }
     .home .banner-box .banner-title {
       color: white;
       font-size: 48px;
@@ -21,6 +32,14 @@
       transform: translate(-50%, -50%);
       z-index: 2;
       white-space: nowrap; }
+      @media (max-width: 768px) {
+        .home .banner-box .banner-title {
+          font-size: 24px;
+          top: 50%;
+          left: 20px;
+          transform: translateY(-50%);
+          white-space: normal;
+          /* Permettre le retour à la ligne sur mobile */ } }
 
 @media (min-width: 768.1px) and (max-width: 1024px) {
   .home .logements-list {
@@ -45,4 +64,4 @@
       top: 50%;
       left: 20px;
       transform: translateY(-50%);
-      white-space: wrap; } }
+      white-space: normal; } }
