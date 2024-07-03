@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   position: relative;
   overflow: hidden; }
   .banner-box::after {
@@ -21,4 +21,5 @@
 
 @media (max-width: 768px) {
   .banner-box {
-    height: 7em; } }
+    height: 7em;
+    margin-bottom: 20px; } }
