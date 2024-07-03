@@ -13,17 +13,21 @@
     background-image: url("/assets/Home.png"); }
     .home .banner-box .banner-title {
       color: white;
-      font-size: 2.5em;
+      font-size: 48px;
       margin: 0;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 2; }
+      z-index: 2;
+      white-space: nowrap; }
 
 @media (min-width: 768.1px) and (max-width: 1024px) {
   .home .logements-list {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .home .banner-box .banner-title {
+    font-size: 36px;
+    white-space: nowrap; } }
 
 @media (max-width: 768px) {
   .home {
@@ -37,9 +41,8 @@
       align-items: center;
       display: flex; }
     .home .banner-box .banner-title {
-      size: 24px;
-      top: 0;
-      left: 0;
-      transform: none;
-      padding: 20px;
-      line-height: 30px; } }
+      font-size: 24px;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      white-space: wrap; } }

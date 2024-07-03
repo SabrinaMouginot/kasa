@@ -1,4 +1,5 @@
 .home {
+  // font-family: 'Montserrat', sans-serif;
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -19,13 +20,14 @@
 
     .banner-title {
       color: white;
-      font-size: 2.5em;
+      font-size: 48px;
       margin: 0;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
+      white-space: nowrap;
     }
 
   }
@@ -36,6 +38,10 @@
 
     .logements-list {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-box .banner-title {
+      font-size: 36px;
+      white-space: nowrap;
     }
   }
 }
@@ -58,13 +64,19 @@
 
     .banner-box {
       .banner-title {
-        size: 24px;
-        top: 0;
-        left: 0;
-        transform: none;
-        padding: 20px;
-        line-height: 30px;
-      }
+        // size: 24px;
+        // top: 0;
+        // left: 0;
+        // transform: none;
+        // padding: 20px;
+        // line-height: 30px;
+
+          font-size: 24px;
+          top: 50%;
+          left: 20px;
+          transform: translateY(-50%);
+          white-space: wrap;
+        }
     }
   }
 }
