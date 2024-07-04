@@ -1,7 +1,15 @@
 .notfound-msg {
-    color:  rgb(255, 96, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 139px;
+    padding: 139px;
+    color: rgb(255, 96, 96);
 
     .notfound-title {
-        font-size: 7em;
+        font-size: 288px;
+        margin: 0;
+        padding: 0;
     }
 }
