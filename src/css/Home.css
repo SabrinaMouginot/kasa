@@ -20,6 +20,7 @@
           .home .logements-box .logements-list .logements-box {
             background-color: none; } }
   .home .banner-box {
+    margin-bottom: 40px;
     background-image: url("/assets/Home.png"); }
     .home .banner-box::after {
       background: rgba(0, 0, 0, 0.6); }
