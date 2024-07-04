@@ -1,14 +1,19 @@
 .About {
-  padding: 50px; }
+  padding: 0px 50px 15px 50px; }
   .About .content-wrapper {
     max-width: 1440px;
     margin: 0 auto; }
+    .About .content-wrapper .banner-box {
+      background-image: url("/assets/About.png"); }
+      .About .content-wrapper .banner-box::after {
+        background: rgba(0, 0, 0, 0.3); }
+    .About .content-wrapper .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
 
-.banner-box {
-  background-image: url("/assets/About.png"); }
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px; }
+@media (max-width: 768px) {
+  .About {
+    padding: 0px 20px 10px 20px; }
+  .about {
+    padding: 0px; } }
