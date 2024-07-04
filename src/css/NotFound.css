@@ -10,3 +10,15 @@
     font-size: 288px;
     margin: 0;
     padding: 0; }
+
+@media (max-width: 768.1px) {
+  .notfound-msg {
+    gap: 113px;
+    padding: 113px 0; }
+    .notfound-msg .notfound-title {
+      height: 99px;
+      font-size: 96px; }
+    .notfound-msg p {
+      text-align: center;
+      /* Centrer le texte pour une meilleure apparence */
+      margin: 0; } }
