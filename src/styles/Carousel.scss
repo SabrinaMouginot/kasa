@@ -1,68 +1,52 @@
   .carousel {
-    display: flex;
     margin-bottom: 50px;
-
+    position: relative;
+  
     .img-lgt {
-      width: 100%;
-      max-width: 1240px;
-      max-height: 415px;
       display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1440px;
+      max-height: 415px;
+      z-index: 1;
     }
-
+  
+    .btn {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: translateY(-50%);
+  
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+  
+        img {
+          z-index: 2;
+        }
+      }
+    }
+  
     .arrow-back {
-      left: 10px;
-      z-index: 10;
+      margin-left: 10px;
     }
-
+  
     .arrow-forward {
-      right: 10px;
-      z-index: 10;
+      margin-right: 10px;
     }
   }
-
+  
   @media (max-width: 426px) {
     .carousel {
       margin-bottom: 20px;
-      
+  
       .img-lgt {
         width: 100%;
       }
     }
   }
-
-  // .carousel {
-  //   position: relative;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   width: 100%;
-  //   height: 500px; // Assurez-vous de fixer une hauteur pour le conteneur du carousel
-
-  //   img {
-  //     width: 100%;
-  //     height: 100%;
-  //     object-fit: cover;
-  //     z-index: 5;
-  //   }
-
-  //   button {
-  //     // position: absolute;
-  //     // top: 50%;
-  //     // transform: translateY(-50%);
-  //     // background-color: transparent;
-  //     // border: none;
-  //     // cursor: pointer;
-  //     // z-index: 10;
-  //     // padding: 0;
-
-  //     &.arrow-back {
-  //       left: 10px;
-  //       z-index: 10;
-  //     }
-
-  //     &.arrow-forward {
-  //       right: 10px;
-  //       z-index: 10;
-  //     }
-  //   }
-  // }
+  

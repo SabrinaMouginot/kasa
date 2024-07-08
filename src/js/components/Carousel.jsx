@@ -14,15 +14,18 @@ function Carousel({ images }) {
 
   return (
     <div className="carousel">
-      <button onClick={handlePrev}>
-        <img src={`/assets/arrow_back.png`} alt="flèche précédente" className='arrow-back' />
-      </button>
 
-      <img src={images[currentIndex]} alt="Logement" className='img-lgt'/>
-      
-      <button onClick={handleNext}>
-        <img src={`/assets/arrow_forward.png`} alt="flèche suivante" className='arrow-forward' />
-      </button>
+      <img src={images[currentIndex]} alt="Logement" className='img-lgt' />
+
+      <div className="btn">
+        <button onClick={handlePrev}>
+          <img src={`/assets/arrow_back.png`} alt="flèche précédente" className='arrow-back' />
+        </button>
+
+        <button onClick={handleNext}>
+          <img src={`/assets/arrow_forward.png`} alt="flèche suivante" className='arrow-forward' />
+        </button>
+      </div>
     </div>
   );
 }
