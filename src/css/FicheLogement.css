@@ -2,7 +2,7 @@
   padding: 0px 50px 50px 50px;
   max-width: 1440px; }
   .fiche-logement h1 {
-    font-size: 2em;
+    font-size: 1.25em;
     margin-top: 20px;
     color: #ff6060;
     width: 50%; }
@@ -10,6 +10,8 @@
   .fiche-logement h2 {
     margin: 0;
     padding: 0; }
+  .fiche-logement h2 {
+    font-size: 0.85em; }
   .fiche-logement .title-owner {
     display: flex;
     justify-content: space-between;

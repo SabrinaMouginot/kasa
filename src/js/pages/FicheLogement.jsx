@@ -38,7 +38,7 @@ function FicheLogement() {
       <div className="title-owner">
         <h1>{logement.title}</h1>
         <div className="owner-info desktop">
-          <span className="owner-name">{logement.host.name}</span>
+          <div className="owner-name">{logement.host.name}</div>
           <img src={logement.host.picture} alt={logement.host.name} className="owner-picture" />
         </div>
       </div>
@@ -55,9 +55,9 @@ function FicheLogement() {
         <div className="title-owner">
           <div className="rating">
             {[...Array(5)].map((_, index) => (
-              <span key={index} className="star">
+              <div key={index} className="star">
                 <StarIcon filled={index < logement.rating} />
-              </span>
+              </div>
             ))}
           </div>
 

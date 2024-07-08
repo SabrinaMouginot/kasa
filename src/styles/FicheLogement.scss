@@ -3,7 +3,7 @@
   max-width: 1440px;
 
   h1 {
-    font-size: 2em;
+    font-size: 1.25em;
     margin-top: 20px;
     color: rgb(255, 96, 96);
     width: 50%;
@@ -13,6 +13,10 @@
   h2 {
     margin: 0;
     padding: 0;
+  }
+
+  h2 {
+    font-size: 0.85em;
   }
 
   .title-owner {
@@ -104,7 +108,12 @@
 
       h1 {
         width: 100%;
+        // font-size: 1.25em;
       }
+
+      // h2 {
+      //   font-size: 0.85em;
+      // }
 
       .desktop {
         display: none;
