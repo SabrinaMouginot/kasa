@@ -1,7 +1,7 @@
   .carousel {
     margin-bottom: 30px;
     position: relative;
-  
+
     .img-lgt {
       display: block;
       margin: 0 auto;
@@ -10,7 +10,7 @@
       max-height: 415px;
       z-index: 1;
     }
-  
+
     .btn {
       position: absolute;
       top: 50%;
@@ -19,34 +19,58 @@
       justify-content: space-between;
       align-items: center;
       transform: translateY(-50%);
-  
+
       button {
         background: none;
         border: none;
         cursor: pointer;
-  
+
         img {
           z-index: 2;
         }
       }
     }
-  
+
     .arrow-back {
       margin-left: 10px;
     }
-  
+
     .arrow-forward {
       margin-right: 10px;
     }
   }
-  
-  @media (max-width: 426px) {
+
+
+
+  @media (max-width: 768px) {
     .carousel {
       margin-bottom: 20px;
-  
+
       .img-lgt {
         width: 100%;
       }
+
+      .arrow-back {
+        height: 80px;
+      }
+
+      .arrow-forward {
+        height: 80px;
+      }
+
     }
   }
-  
+
+  @media (max-width: 426px) {
+    .carousel {
+      .arrow-back {
+        height: 50px;
+        margin-left: 0;
+      }
+
+      .arrow-forward {
+        height: 50px;
+        margin-right: 0;
+      }
+    }
+  }

@@ -27,8 +27,20 @@
   .carousel .arrow-forward {
     margin-right: 10px; }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .carousel {
     margin-bottom: 20px; }
     .carousel .img-lgt {
-      width: 100%; } }
+      width: 100%; }
+    .carousel .arrow-back {
+      height: 80px; }
+    .carousel .arrow-forward {
+      height: 80px; } }
+
+@media (max-width: 426px) {
+  .carousel .arrow-back {
+    height: 50px;
+    margin-left: 0; }
+  .carousel .arrow-forward {
+    height: 50px;
+    margin-right: 0; } }
