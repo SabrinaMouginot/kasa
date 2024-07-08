@@ -6,6 +6,7 @@
     font-size: 2em;
     margin-top: 20px;
     color: rgb(255, 96, 96);
+    width: 50%;
   }
 
   h1,
@@ -19,6 +20,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    // gap: ;
 
     .owner-info {
       display: flex;
@@ -85,7 +87,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .fiche-logement {
     padding: 0px 20px 20px 20px;
 
@@ -99,6 +101,10 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
+
+      h1 {
+        width: 100%;
+      }
 
       .desktop {
         display: none;

@@ -4,7 +4,8 @@
   .fiche-logement h1 {
     font-size: 2em;
     margin-top: 20px;
-    color: #ff6060; }
+    color: #ff6060;
+    width: 50%; }
   .fiche-logement h1,
   .fiche-logement h2 {
     margin: 0;
@@ -56,7 +57,7 @@
     .fiche-logement .rating .star.filled {
       color: #ff6060; }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .fiche-logement {
     padding: 0px 20px 20px 20px; }
     .fiche-logement .dropdowns,
@@ -67,6 +68,8 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px; }
+      .fiche-logement .title-owner h1 {
+        width: 100%; }
       .fiche-logement .title-owner .desktop {
         display: none; }
       .fiche-logement .title-owner .mobile {
