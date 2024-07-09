@@ -24,7 +24,7 @@
     transform: rotate(180deg);
     /* Pour animer la rotation de la flèche */ }
   .dropdown .dropdown-content {
-    background-color: white;
+    background-color: #F6F6F673;
     color: black;
     padding: 1em;
     border-top: 1px solid #ff6060; }
