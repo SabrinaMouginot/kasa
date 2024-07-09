@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import '../../css/FicheLogement.css';
 import Carousel from '../components/Carousel';
-import NotFound from './NotFound';
 import Tag from '../components/Tag';
 import Dropdown from '../components/Dropdown';
 
 function FicheLogement() {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/logements.json')
@@ -17,13 +17,15 @@ function FicheLogement() {
         const foundLogement = data.find(logement => logement.id === id);
         if (foundLogement) {
           setLogement(foundLogement);
+        }else {
+          navigate("/logement-non-trouve")
         }
       })
       .catch(error => console.error('Error fetching logement:', error));
   }, [id]);
 
   if (!logement) {
-    return <NotFound />;
+    return <p>Chargement...</p>;
   }
 
   const StarIcon = ({ filled }) => (
