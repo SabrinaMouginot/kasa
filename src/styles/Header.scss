@@ -25,6 +25,10 @@
 
       }
 
+      &.active-link {
+        text-decoration-line: underline;
+      }
+
       &:hover {
         text-decoration-line: underline;
       }

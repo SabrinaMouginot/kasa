@@ -22,7 +22,7 @@ function FicheLogement() {
         }
       })
       .catch(error => console.error('Error fetching logement:', error));
-  }, [id]);
+  }, [id, navigate]);
 
   if (!logement) {
     return <p>Chargement...</p>;
