@@ -26,7 +26,7 @@
       .fiche-logement .title-owner .owner-info .owner-name {
         margin-right: 10px;
         font-size: 1.2em;
-        font-weight: bold;
+        font-weight: normal;
         color: #ff6060; }
       .fiche-logement .title-owner .owner-info .owner-picture {
         width: 4em;
@@ -58,6 +58,13 @@
       font-size: 24px;
       color: lightgray;
       cursor: pointer; }
+      .fiche-logement .rating .star .star-icon {
+        width: 36px;
+        height: 36px; }
+      @media (max-width: 768px) {
+        .fiche-logement .rating .star .star-icon {
+          width: 18px;
+          height: 18px; } }
     .fiche-logement .rating .star.filled {
       color: #ff6060; }
 
@@ -71,7 +78,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 5px; }
+      margin: 5px 0px; }
       .fiche-logement .title-owner h1 {
         width: 100%; }
       .fiche-logement .title-owner .desktop {
@@ -80,11 +87,12 @@
         display: flex;
         align-items: center; }
         .fiche-logement .title-owner .mobile .owner-name {
-          margin-right: 10px;
-          font-size: 1.2em;
-          font-weight: bold;
-          color: #ff6060; }
+          margin-right: 15px;
+          font-size: 0.8em;
+          font-weight: normal;
+          color: #ff6060;
+          width: 24px; }
         .fiche-logement .title-owner .mobile .owner-picture {
-          width: 4em;
-          height: 4em;
+          width: 32px;
+          height: 32px;
           border-radius: 50%; } }
