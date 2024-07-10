@@ -1,22 +1,25 @@
 .fiche-logement {
-  padding: 0px 50px 50px 50px;
+  padding: 0px 50px 15px 50px;
   max-width: 1440px; }
+  .fiche-logement .carousel {
+    margin-bottom: 20px; }
   .fiche-logement h1 {
     font-size: 1.25em;
     margin-top: 20px;
     color: #ff6060;
-    width: 50%; }
+    width: 50%;
+    font-weight: normal; }
   .fiche-logement h1,
   .fiche-logement h2 {
     margin: 0;
     padding: 0; }
   .fiche-logement h2 {
-    font-size: 0.85em; }
+    font-size: 0.85em;
+    font-weight: normal; }
   .fiche-logement .title-owner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; }
+    align-items: center; }
     .fiche-logement .title-owner .owner-info {
       display: flex;
       align-items: center; }
@@ -39,8 +42,7 @@
   .fiche-logement .dropdowns {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    margin-top: 25px; }
+    gap: 20px; }
   .fiche-logement .dropdown {
     flex: 1;
     margin-bottom: 20px; }
@@ -48,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; }
+    margin-bottom: 5px; }
   .fiche-logement .rating {
     display: flex;
     align-items: center; }
