@@ -71,7 +71,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px; }
+      margin-bottom: 5px; }
       .fiche-logement .title-owner h1 {
         width: 100%; }
       .fiche-logement .title-owner .desktop {

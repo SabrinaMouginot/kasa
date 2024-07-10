@@ -9,7 +9,7 @@
     max-height: 415px;
     z-index: 1;
     object-fit: cover;
-    border-radius: 25px; }
+    border-radius: 15px; }
   .carousel .btn {
     position: absolute;
     top: 50%;
@@ -31,7 +31,7 @@
 
 @media (max-width: 768px) {
   .carousel {
-    margin-bottom: 20px; }
+    margin-bottom: 10px !important; }
     .carousel .img-lgt {
       width: 100%; }
     .carousel .arrow-back {
