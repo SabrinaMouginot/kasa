@@ -26,6 +26,10 @@ function Carousel({ images }) {
           </button>
         </div>
       )}
+
+      <div className="counter">
+        {currentIndex + 1} / {images.length}
+      </div>
     </div>
   );
 }

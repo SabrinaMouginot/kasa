@@ -28,6 +28,16 @@
     margin-left: 10px; }
   .carousel .arrow-forward {
     margin-right: 10px; }
+  .carousel .counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    z-index: 2;
+    color: white; }
 
 @media (max-width: 768px) {
   .carousel {
