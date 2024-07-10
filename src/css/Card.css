@@ -1,14 +1,13 @@
 @charset "UTF-8";
 .logement-card {
   flex: 0 1 calc(33.33% - 20px);
-  /* Ajuster la largeur des cartes */
   position: relative;
   overflow: hidden;
   border-radius: 10px; }
   @media (max-width: 768px) {
     .logement-card {
       flex: 0 1 calc(100% - 50px);
-      /* Une carte par ligne avec espace de 25px de chaque côté */ } }
+      height: 255px; } }
   .logement-card .image-container {
     position: relative;
     width: 100%;

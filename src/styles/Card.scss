@@ -1,11 +1,12 @@
 .logement-card {
-  flex: 0 1 calc(33.33% - 20px); /* Ajuster la largeur des cartes */
+  flex: 0 1 calc(33.33% - 20px);
   position: relative;
   overflow: hidden;
   border-radius: 10px;
 
   @media (max-width: 768px) {
-    flex: 0 1 calc(100% - 50px); /* Une carte par ligne avec espace de 25px de chaque côté */
+    flex: 0 1 calc(100% - 50px);
+    height: 255px;
   }
 
   .image-container {
