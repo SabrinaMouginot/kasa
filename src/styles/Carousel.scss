@@ -72,6 +72,9 @@
         height: 80px;
       }
 
+      .counter {
+        display: none; /* Masquer le compteur sur les petits écrans */
+      }
     }
   }
 

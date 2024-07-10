@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .carousel {
   margin-bottom: 30px;
   position: relative; }
@@ -47,7 +48,10 @@
     .carousel .arrow-back {
       height: 80px; }
     .carousel .arrow-forward {
-      height: 80px; } }
+      height: 80px; }
+    .carousel .counter {
+      display: none;
+      /* Masquer le compteur sur les petits écrans */ } }
 
 @media (max-width: 426px) {
   .carousel .arrow-back {
