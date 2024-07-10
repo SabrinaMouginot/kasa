@@ -16,10 +16,10 @@
     .header .nav-list .nav-item a {
       text-decoration: none;
       color: #000; }
-    .header .nav-list .nav-item.active-link {
-      text-decoration-line: underline; }
-    .header .nav-list .nav-item:hover {
-      text-decoration-line: underline; }
+      .header .nav-list .nav-item a.active-link {
+        text-decoration: underline; }
+      .header .nav-list .nav-item a:hover {
+        text-decoration: underline; }
 
 @media (max-width: 768px) {
   .header {

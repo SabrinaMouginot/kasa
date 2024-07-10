@@ -18,30 +18,29 @@
     font-size: 24px;
 
     .nav-item {
-
       a {
         text-decoration: none;
         color: #000;
 
-      }
+        &.active-link {
+          text-decoration: underline;
+        }
 
-      &.active-link {
-        text-decoration-line: underline;
-      }
-
-      &:hover {
-        text-decoration-line: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
-  }
+}
 
-  @media (max-width: 768px) {
-    .header {
-      padding: 20px;
-      .nav-list {
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+
+    .nav-list {
       font-size: 12px;
       text-transform: uppercase;
     }
-    }
   }
+}

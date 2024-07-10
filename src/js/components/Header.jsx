@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../../css/Header.css'; 
+import '../../css/Header.css';
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
       <nav>
         <ul className="nav-list">
           <li className="nav-item">
-            <NavLink to="/"  className={({ isActive }) => (isActive ? 'active-link' : '')}>Accueil</NavLink>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active-link' : '')}>Accueil</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/about" className={({ isActive }) => (isActive ? 'active-link' : '')}>À propos</NavLink>
