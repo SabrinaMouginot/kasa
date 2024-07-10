@@ -39,8 +39,8 @@
 
 @media (max-width: 426px) {
   .carousel .arrow-back {
-    height: 50px;
+    height: 30px;
     margin-left: 0; }
   .carousel .arrow-forward {
-    height: 50px;
+    height: 30px;
     margin-right: 0; } }
