@@ -4,7 +4,6 @@
   .fiche-logement .carousel {
     margin-bottom: 20px; }
   .fiche-logement h1 {
-    font-size: 1.25em;
     margin-top: 20px;
     color: #ff6060;
     width: 50%;
@@ -80,6 +79,7 @@
       align-items: center;
       margin: 5px 0px; }
       .fiche-logement .title-owner h1 {
+        font-size: 1.25em;
         width: 100%; }
       .fiche-logement .title-owner .desktop {
         display: none; }
@@ -91,7 +91,7 @@
           font-size: 0.8em;
           font-weight: normal;
           color: #ff6060;
-          width: 24px; }
+          width: 50px; }
         .fiche-logement .title-owner .mobile .owner-picture {
           width: 32px;
           height: 32px;

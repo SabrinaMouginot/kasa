@@ -7,7 +7,7 @@
   }
 
   h1 {
-    font-size: 1.25em;
+    // font-size: 1.25em;
     margin-top: 20px;
     color: rgb(255, 96, 96);
     width: 50%;
@@ -123,6 +123,7 @@
       margin: 5px 0px;
 
       h1 {
+        font-size: 1.25em;
         width: 100%;
       }
 
@@ -140,7 +141,7 @@
           font-size: 0.8em;
           font-weight: normal;
           color: rgb(255, 96, 96);
-          width: 24px;
+          width: 50px;
         }
 
         .owner-picture {
