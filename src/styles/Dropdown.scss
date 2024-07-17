@@ -27,7 +27,7 @@
         transition: transform 0.3s ease;
     }
 
-    .dropdown.open .dropdown-arrow {
+    &.open .dropdown-arrow {
         transform: rotate(180deg);
         /* Pour animer la rotation de la flèche */
     }
