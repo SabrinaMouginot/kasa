@@ -19,7 +19,20 @@ function Dropdown({ title, content }) {
           alt="Dropdown Arrow"
         />
       </div>
-      {isOpen && <div className="dropdown-content"><p>{content}</p></div>}
+      {/* {isOpen && <div className="dropdown-content"><p>{content}</p></div>} */}
+      {isOpen && (
+        <div className="dropdown-content">
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

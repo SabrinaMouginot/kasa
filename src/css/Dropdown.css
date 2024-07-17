@@ -28,6 +28,9 @@
     color: black;
     padding: 1em;
     border-top: 1px solid #ff6060; }
+    .dropdown .dropdown-content ul {
+      list-style-type: none;
+      padding: 0; }
 
 @media (max-width: 768px) {
   .dropdown {

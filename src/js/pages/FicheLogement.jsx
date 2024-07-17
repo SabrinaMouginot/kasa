@@ -72,7 +72,7 @@ function FicheLogement() {
 
       <div className="dropdowns">
         <Dropdown title="Description" content={logement.description} />
-        <Dropdown title="Equipements" content={logement.equipments.join(', ')} />
+        <Dropdown title="Equipements" content={logement.equipments} />
       </div>
     </div>
   );
